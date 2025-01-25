@@ -47,14 +47,20 @@ class Motorbike extends Vehicle {
     } else {
       this.wheels = wheels;
     }
+  }
 
   // TODO: Implement the wheelie method
+  wheelie():void{
     // TODO: The method should log the message "Motorbike [make] [model] is doing a wheelie!"
     
     console.log(`Motorbike ${this.make} ${this.model} is doing a wheelie!`);
+  }
 
   // TODO: Override the printDetails method from the Vehicle class
+  override printDetails(): void {
+
   // TODO: The method should call the printDetails method of the parent class
+  super.printDetails();
   // TODO: The method should log the details of the Motorbike
   // TODO: The details should include the VIN, make, model, year, weight, top speed, color, and wheels
   console.log(`VIN: ${this.vin}`);
@@ -67,6 +73,7 @@ class Motorbike extends Vehicle {
   console.log(`Wheels: ${this.wheels}`);
   }
 }
+
 
 
 // Export the Motorbike class as the default export
